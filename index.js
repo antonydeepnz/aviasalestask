@@ -1,35 +1,9 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
-import Child from './Todos'
 import Filter from './Filter'
 import Ticket from './Ticket'
 import Radio from './Radio'
-
-
-class Child2 extends Component {
-  constructor(){
-    super();
-    this.state = {
-
-      //list: []
-    }
-  }
-
-  render(){
-    const arr = this.props.list;
-    const pa = arr.map(item => 
-      <li>{item}</li>
-    );
-    //console.log(pa);
-    return(
-      <div>
-        {pa}
-      </div>
-    );
-  }
-}
 
 class AviasalesApp extends Component {
   constructor() {
@@ -99,9 +73,3 @@ class AviasalesApp extends Component {
   }
 }
 render(<AviasalesApp />, document.getElementById('root'));
-
-/*
-<Hello name={this.state.name} />
-        
-        <Child update={this.update}/>
-        <Child2 list={this.state.list} />*/ 
