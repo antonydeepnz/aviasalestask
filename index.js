@@ -9,8 +9,6 @@ class AviasalesApp extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'React',
-      list: ["rerwer",3,5,7,8,"dsfsdf"],
       tickets: [],
       typeChecker: '',
       stopsFilter: ''
